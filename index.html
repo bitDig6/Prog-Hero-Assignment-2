@@ -6,47 +6,95 @@
     <title>Fitness Related Website</title>
     <link rel="stylesheet" href="styles/fitness.css">
 </head>
-<body class="inter-font">
+<body class="inter-font dark-mode">
     <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <h1>Fitness</h1>
-            </div>
-
-            <div class="nav-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
+        <nav class="navbar display-flex">
+           <h1 class="logo"><em>Fitness</em></h1>
+           
+           <input type="checkbox" id="check">
+           <label for="check" class="hamburger-menu">
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+                <div class="lines"></div>
+           </label>
+           <ul class="nav-menu display-flex">
+            <li class="nav-menu-item"><a href="#" id="home">Home</a></li>
+            <li class="nav-menu-item"><a href="#">Service</a></li>
+            <li class="nav-menu-item"><a href="#">Contact</a></li>
+            <li class="nav-menu-item"><a href="#" id="about">About</a></li>
+        </ul>
         </nav>
 
-        <div class="banner">
+        <div class="banner display-flex">
             <div class="banner-content">
-                <h1>Get body in shape & stay healthy</h1>
-                <p>A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
-                <button>Join Club Now!</button>
-                <button>Download app</button>
+                <h1 class="banner-title">Get body in <span id="shape">shape</span> & stay healthy</h1>
+                <p class="banner-description text-color-small">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                <div class="banner-buttons display-flex">
+                    <button class="btn-primary">Join Club Now!</button>
+                    <button class="btn-secondary">Download app</button>
+                </div>
             </div>
 
             <div class="banner-image">
-                <button>
-                    <span>500+</span>
+                <button class="workout">
+                    <span id="five-hundred">500+</span>
                     <br>
                     <span>Free Workout Videos</span>
                 </button>
 
                 <img src="images/Images 2.png" alt="Man holding dumbbell" class="banner-profile-pic">
 
-                <button>
-                    <span>350+</span>
+                <button class="tutorial">
+                    <span id="three-hundred-fifty">350+</span>
                     <br>
                     <span>Video tutorial</span>
                 </button>
             </div>
         </div>
     </header>
+
+    <main>
+        <!--change your habits section-->
+        <section class="change-habit center">
+            <h2 class="change-habit-title">Change Your Habits</h2>
+            <p class="change-habit-description text-color-small">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+
+            <div class="card-container display-flex">
+                <div class="card">
+                    <img src="images/image 3.png" alt="man-pushups" class="card-image">
+                    <h3 class="card-title">Movement</h3>
+                    <p class="card-description">Regular movements of your limbs.</p>
+                </div>
+                <div class="card">
+                    <img src="images/image 2.png" alt="man-yoga" class="card-image">
+                    <h3 class="card-title">Time</h3>
+                    <p class="card-description">Manage your Time.</p>
+                </div>
+                <div class="card">
+                    <img src="images/image 4.png" alt="man-dumbbell-lift" class="card-image">
+                    <h3 class="card-title">Practice</h3>
+                    <p class="card-description">Practice more and more to get the fitness you want</p>
+                </div>
+                <div class="card">
+                    <img src="images/image 5.png" alt="man-holding-dumbbell-small" class="card-image">
+                    <h3 class="card-title">Weight Loss</h3>
+                    <p class="card-description">Lose weight by following the routine works.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- run extra miles section -->
+         <section class="run-extra display-flex">
+            <div class="run-extra-content">
+                <h2 class="run-extra-title">Run an Extra Mile Easily</h2>
+                <p class="run-extra-description text-color-small">Run an extra mile with our experts prescribed routine. Get rid of fatigue and run as much as you can. Monitor your speed while running. Get faster and faster.</p>
+                <button class="btn-primary" id="join-btn">Join Now</button>
+            </div>
+            <div class="run-extra-image">
+                <img src="images/run.jpg" alt="man-running-on-mountainy-area">
+            </div>
+         </section>
+    </main>
 </body>
 </html>
