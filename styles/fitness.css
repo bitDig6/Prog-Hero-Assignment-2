@@ -432,13 +432,12 @@ option{
     font-size: 1.25rem;
     font-weight: 600;
     color: #ffffff;
-    margin: 0 0 3px 18px;
+    margin: 212px 0 3px 18px;
 }
 
 .designation{
-    /* position: absolute; */
     font-size: 0.875rem;
-    margin: 0 0 16px 18px;
+    margin: 0px 0 16px 18px;
 }
 
 .trainer{
@@ -611,6 +610,10 @@ option{
 
     .BMI-form{
         grid-template-columns: 47% 47%;
+    }
+
+    .meet-our-team{
+        width: 90%;
     }
 
     .our-team-featured{
