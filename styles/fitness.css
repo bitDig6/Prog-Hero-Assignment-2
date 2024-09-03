@@ -487,6 +487,72 @@ option{
     background-size: cover;
 }
 
+/* footer designs */
+
+.footer{
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-content,
+.copyright{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.footer-content{
+    gap: 100px;
+}
+
+.over-line {
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo-and-description{
+    width: 50%;
+}
+
+.footer-menus{
+    width: 50%;
+    gap: 152px;
+}
+
+#footer-logo{
+    font-size: 4.375rem;
+    margin: 0 0 20px 0;
+}
+
+.footer-description{
+    font-size: 0.875rem;
+    letter-spacing: 0.3px;
+    margin: 0;
+}
+
+.footer-menus ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-menus ul > li{
+    margin-bottom: 20px;
+}
+
+.menu-title{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 38px 0;
+}
+
+.menu-item{
+    font-size: 1.4375rem;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
 /* responsive designs */
 
 /* mobile devices */
@@ -619,6 +685,18 @@ option{
     .our-team-featured{
         grid-template-columns: 1fr;
         grid-template-rows: 270px 270px 270px 270px 270px 270px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-logo-and-description{
+        width: 100%;
+    }
+
+    .footer-menus{
+        flex-direction: column;
     }
 
 }
