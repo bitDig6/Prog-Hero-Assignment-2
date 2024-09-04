@@ -67,6 +67,10 @@ body{
     color: #ffffff;
     margin: 0 0 14px 0;
 }
+
+button{
+    cursor: pointer;
+}
 /* header styles */
 
 .header{
@@ -173,8 +177,8 @@ body{
 
 .workout{
     position: absolute;
-    top: 250px;
-    right: 150px;
+    top: 223px;
+    right: 84px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -195,8 +199,10 @@ body{
 }
 
 .tutorial{
+    gap: 10px;
+    align-items: center;
     position: absolute;
-    right: 450px;
+    right: 396px;
     top: 525px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -207,7 +213,24 @@ body{
     letter-spacing: 0.03125rem;
     text-align: left;
     backdrop-filter: blur(20px);
-    padding: 16px 30px;
+    padding: 20px 25px 20px 23px;
+}
+
+.circle{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100px;
+    background-color: #E6533C;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left: 15px solid #FAFAF9;
+    position: absolute;
+    right: 135px;
+    top: 35px;
 }
 
 #three-hundred-fifty{
@@ -401,7 +424,7 @@ option{
 /* meet our team styles */
 
 .meet-our-team{
-    width: 85%;
+    width: 80%;
     margin: 80px auto;
 }
 
@@ -586,7 +609,7 @@ option{
    }
 
    .banner{
-    height: 124vh;
+    height: 52.25rem;
     overflow:hidden;
     flex-direction: column;
 }
@@ -693,8 +716,13 @@ option{
         grid-template-rows: 270px 270px 270px 270px 270px 270px;
     }
 
+    .footer{
+        padding-top: 40px;
+    }
+
     .footer-content{
         flex-direction: column;
+        gap: 30px;
     }
 
     .footer-logo-and-description{
@@ -703,6 +731,11 @@ option{
 
     .footer-menus{
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .copyright-text{
+        text-align: left;
     }
 
 }
