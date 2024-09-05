@@ -227,9 +227,8 @@ button{
     height: 0;
     border: 10px solid transparent;
     border-left: 15px solid #FAFAF9;
-    position: absolute;
-    right: 135px;
-    top: 35px;
+    margin-top: 8px;
+    margin-left: 14px;
 }
 
 #three-hundred-fifty{
