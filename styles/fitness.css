@@ -723,7 +723,8 @@ option{
         gap: 30px;
     }
 
-    .footer-logo-and-description{
+    .footer-logo-and-description,
+    .footer-menus{
         width: 100%;
     }
 
